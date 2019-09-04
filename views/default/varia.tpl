@@ -1,0 +1,1 @@
+<button class="buttom" id="device">Оборудование</button>
