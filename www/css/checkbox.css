@@ -1,0 +1,63 @@
+.checkbox {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+}
+.switch label {
+    cursor: pointer;
+    color: #00ff00;
+}
+.switch label:hover{
+    color: #fe8300;
+}
+/* Прячем оригинальный чекбокс. */
+.checkbox:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.switch label{
+    font-size: 1.1em;
+}
+.checkbox:not(checked) + label {
+    position: relative; /* будем позиционировать псевдочекбокс относительно label */
+    padding: 0 0 0 60px; /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    background: #ab0000;
+    border: 1px solid #004400;
+    box-shadow: inset 3px 3px 2px 1px rgba(0, 0, 0, 0.5);
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #aaaaaa;
+    transition: all .5s; /* анимация, чтобы чекбокс переключался плавно */
+    box-shadow: inset 3px 2px 0px 0px rgba(230,230,230,0.4);
+}
+/* Меняем фон чекбокса, когда он включен. */
+.checkbox:checked + label:before {
+    background: #008800;
+    border: 1px solid #ab0000;
+    box-shadow: inset -3px 3px 2px 1px rgba(0, 0, 0, 0.5);
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.checkbox:checked + label:after {
+    left: 26px;
+    content: '';
+    box-shadow: inset -3px 2px 0px 0px rgba(230,230,230,0.4);
+}

@@ -1,0 +1,35 @@
+.logTable{
+    overflow-y: auto;
+    height: 500px;
+}
+.log{
+    font-size: 1.1em;
+    color: #00ff00;
+}
+table{
+    border: 2px solid #008800;
+    margin: 20px auto;
+    width: 80%
+}
+td{border: 2px solid #008800;}
+.head{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.errorMessage{
+    background-color: #ab0000
+}
+.list{
+    margin: 0 auto;
+    text-align: center;
+}
+.list a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #00ff00;
+}
+.list a:hover{
+    color: #fe8300;
+    cursor: pointer;
+}

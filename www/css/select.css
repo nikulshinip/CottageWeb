@@ -1,0 +1,24 @@
+.select{
+    color: #00ff00;
+    text-align: center;
+    font-size: 1.1em;
+    background-color: #004400;
+    padding: 1px 20px 1px 15px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 3px 2px 1px 0px rgba(0, 0, 0, 0.7), inset 0 0 3px 3px rgba(0, 255, 0, 0.7);
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none!important;
+    background-image: url('../img/select.png');
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+}
+.select:hover{
+    color: #fe8300;
+    box-shadow: 3px 2px 1px 0px rgba(0, 0, 0, 0.7), inset 0 0 3px 3px rgba(254, 131, 0, 0.7);
+    background-image: url('../img/select_hover.png');
+}
+.select::-ms-expand{display: none}

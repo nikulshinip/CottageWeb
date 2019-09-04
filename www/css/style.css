@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Lasco'; /* Гарнитура шрифта */
+    src: url(../font/lasco-bold.ttf); /* Путь к файлу со шрифтом */
+}
+root{
+    display: inline-block;
+}
+body{
+    background-color: #243c3c;
+    background: linear-gradient(25deg, #000000, #335555);
+    margin: 0;
+}
+.cover{
+    height: 560px;
+    width: 960px;
+    margin: 0 auto;
+    border: #00ff00 groove 2px;
+    border-radius: 20px;
+}
+
+.menu{
+    height: 31px;
+    text-align: center;
+    font-family: Lasco;
+    font-size: 16pt;
+    background-color: #004400;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 1px groove #00ff00;
+}
+.menu_buttom, .menu_buttom_now{
+    height: 30px;
+    width: 160px;
+    background-color: #004400;
+    background: linear-gradient(0deg, #004400, #435f43);
+    border-radius: 20px 20px 0 0;    
+    border-top: #00ff00 groove 2px;
+    margin-top: -2px;
+    float: left;
+    text-decoration: none;
+}
+.menu_buttom{color: #00ff00;}
+.menu_buttom_now{color: #fe8300;} /*для открытой страницы*/
+.menu_buttom:hover{
+    color: #fe8300;
+    cursor: pointer;
+    border-top: #00ff00 groove 2px;
+}
+.menu_gap{
+    height: 30px;
+    width: 40px;
+    float: left;
+    border-radius: 0 0 20px 20px;
+    border-bottom: #00ff00 groove 2px;
+}
+.menu_small_line, .menu_big_line{ /*Для прикрытия линий выделенного пункта мену*/
+    position: relative;
+    border: 1px solid #004400;
+    top: 30px;
+}
+.menu_small_line{width: 171px;}
+.menu_big_line{width: 183px;}
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 529px;
+    background-color: #004400;
+    background: linear-gradient(0deg, #435f43, #004400);
+    border-radius: 0 0 20px 20px;
+}
+.error{
+    font-size: 2.6em;
+    font-weight: bold;
+    text-align: center;
+    color: #ff0000;
+    padding: 50px;
+    text-shadow:5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.buttom{
+    position: absolute;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    background-color: #004400;
+    color: #00ff00;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 2px 0 black;
+    box-shadow: 3px 2px 1px 0px rgba(0, 0, 0, 0.7), inset 0 0 3px 3px rgba(0, 255, 0, 0.7);
+}
+.buttom:hover{
+    color: #fe8300;
+    box-shadow: 3px 2px 1px 0px rgba(0, 0, 0, 0.7), inset 0 0 3px 3px rgba(254, 131, 0, 0.7);
+}

@@ -1,0 +1,34 @@
+.floor_img{
+    background-image: url(../img/floor1.png);
+    width: 614px;
+    left: 189px;
+}
+#room{
+    left: 480px;
+    top: 164px;
+    transform: rotate(-10deg);
+}
+#stairs{
+    left: 342px;
+    top: 260px;
+    transform: rotate(-13deg);
+}
+#terrace{
+    left: 564px;
+    top: 328px;
+    transform: rotate(-47deg);
+}
+#out{
+    left: 750px;
+    top: 70px;
+}
+#cook{
+    left: 313px;
+    top: 108px;
+    transform: rotate(-15deg);
+}
+#bathRoom{
+    left: 214px;
+    top: 186px;
+    transform: rotate(-12deg);
+}

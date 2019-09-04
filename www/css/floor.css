@@ -1,0 +1,33 @@
+.floor_img{
+    height: 529px;
+    position: relative;    
+}
+
+.signal{
+    position: absolute;
+    color: #00ff00;
+    vertical-align: baseline;
+    font-size: 26px;
+}
+.signal_active{color: #ff0000;}
+.signal_unknown{color: #ffff00;}
+.temp, .fire, .go{
+    height: 32px;
+    background-image: url(../img/icon.png);
+    position: relative;
+    float: left;
+    margin-right: 5px;
+}
+.fire, .go{width: 32px;}
+.temp{
+    width: 11px;
+    background-position: 0 0;
+}
+.fire{background-position: 32px 64px;}
+.go{background-position: -13px 64px;}
+.temp_active{background-position: 0 -32px;}
+.fire_active{background-position: 32px 0;}
+.go_active{background-position: -13px 0;}
+.temp_unknown{background-position: 0 32px;}
+.fire_unknown{background-position: 32px 32px;}
+.go_unknown{background-position: -13px 32px;}

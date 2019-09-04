@@ -1,0 +1,161 @@
+.cotel{
+    background-image: url(../img/cotel.png);
+    width: 419px;
+    height: 312px;
+    position: relative;
+    left: 279px;
+    top: 100px;
+/*    left: 219px;  +60
+    top: 143px;     -43*/
+}
+#cotel_power{
+    position: absolute;
+    left: 217px;
+    top: 121px;
+    height: 235px;
+}
+#cotel_power_select{
+    position: absolute;
+    left: 131px;
+    z-index: 1;
+    background-position: left 10px center;
+}
+
+.all_cotel_power_lamp{
+    position: absolute;
+    width: 0.8em;
+    height: 233px;
+    top: 124px;
+    left: 245px;
+}
+.cotel_power_lamp{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 2px;
+    border: 1px solid #004400;
+    background-color: #ab0000;
+}
+.cotel_power_lamp_activ{
+    background-color: #00ff00;
+    box-shadow: 0px 0px 2px 3px rgba(0, 240, 0, 0.5);
+}
+
+.pump, .cotel_sw{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #004400;
+    border-radius: 10px;
+    background-color: #ab0000;
+    box-shadow: inset 1px 2px 2px 1px rgba(240, 240, 0, 0.4);
+}
+#pump1{top: 347px; left: 374px;}
+#cotel_sw1{top: 207px; left: 292px;}
+#cotel_sw2{top: 247px; left: 292px;}
+.pump_activ, .cotel_sw_activ{
+    background-color: #00ff00;
+    box-shadow: 0 0 2px 3px rgba(0, 240, 0, 0.5);
+}
+
+.temperatur{
+    position: absolute;
+    border: 0;
+    font-weight: bold;
+    color: #00ff00;
+    background-color: #004400;
+    width: 55px;
+    text-align: center;
+}
+.temperatur_active{
+    background-color: #ab0000;
+    box-shadow: 0 0 2px 3px rgba(240, 0, 0, 0.5);
+}
+#t_cotel{top: 118px; left: 342px;}
+#t_obratka{top: 373px; left: 276px;}
+#t_floor1{top: 289px; left: 556px;}
+#t_out{top: 173px; left: 371px;}
+
+#floor1_setting{
+    position: absolute;
+    left: 735px;
+    height: 140px;
+    top: 211px;
+}
+#back_setting{
+    position: absolute;
+    width: 360px;
+    left: 320px;
+    top: 423px;
+}
+.temperatur_input{
+    position: absolute;
+    z-index: 1;
+}
+#temperatur_input_floor1{left: 729px;}
+#temperatur_input_back{top:419px;}
+.temperatur_input input{
+    width: 30px;
+    color: #00ff00;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 2px 30px 2px 25px;
+    background-color: #004400;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 3px 2px 1px 0px rgba(0, 0, 0, 0.7), inset 0 0 3px 3px rgba(0, 255, 0, 0.7);
+}
+.temperatur_input input:focus{
+    color: #fe8300;
+    box-shadow: 3px 2px 1px 0px rgba(0, 0, 0, 0.7), inset 0 0 3px 3px rgba(254, 131, 0, 0.7);
+}
+.temperatur_input input + label{
+    color: #00ff00;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+}
+.temperatur_input input:focus + label{
+    color: #fe8300;
+}
+
+.all_switch{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.switch{
+    height: 26px;
+    margin: 5px;
+    float: left;
+}
+#mode_switch{
+    position: relative;
+    left: 150px;
+}
+#mode_switch:before{
+    content: 'Режим работы котла';
+    position: absolute;
+    color: #00ff00;
+    font-size: 1.1em;
+    top: -24px;
+    left: 111px;
+}
+.inputError{
+    display: none;
+    position: absolute;
+    border: 2px solid #ab0000;
+    border-radius: 10px;
+    color: #ff0000;
+    font-size: 1.2em;
+    text-align: center;
+    width: 160px;
+    height: 63px;
+    top: 230px;
+    left: 777px;
+    padding-top: 7px;
+    background-color: #004400;
+    box-shadow: 0 0 2px 3px rgba(240, 0, 0, 0.5);
+}
+
+#apply{top: 465px; left: 795px; display: none;}
+#time{top: 465px; left: 20px;}

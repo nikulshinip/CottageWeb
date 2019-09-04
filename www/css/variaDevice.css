@@ -1,0 +1,84 @@
+.content {
+    overflow-y: auto;
+}
+.temperatureBox{
+    width: 50%;
+    float:left;
+}
+.ds2408Box{
+    width: 50%;
+    float: right;
+}
+.temperatureItem, .ds2408Item{
+    color: #00ff00;
+    width: 75%;
+    border: 2px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #004400;
+    box-shadow: 3px 2px 1px 0px rgba(0, 0, 0, 0.7), inset 0 0 3px 3px rgba(0, 255, 0, 0.7);
+}
+.id{
+    font-size: 11pt;
+    margin-left: 3px;
+    margin-top: -10px;
+    top: -5px;
+}
+.title{
+    text-align: center;
+    font-size: 15pt;
+}
+.temperatureItem .title {
+    float: left;
+    width: 70%;
+}
+.address {
+    font-size: 11pt;
+    margin-bottom: -10px;
+    margin-right: 5px;
+    text-align: right;
+}
+.temperatureItem input{
+    border: 0;
+    font-weight: bold;
+    color: #00ff00;
+    background-color: #004400;
+    width: 55px;
+    text-align: center;
+}
+.temperatureItemFalse input{
+    background-color: #dd0000;
+}
+.fullDin{
+    margin-top: 25px;
+    text-align: center;
+    margin: 0;
+}
+.fullDin input, .fullDout input{
+    border: 0 none;
+    color: #00ff00;
+    font-weight: bold;
+    text-align: center;
+    width: 21%;
+    margin: 4px;
+}
+.fullDout{
+    text-align: center;
+}
+.temperatureItemFalse , .ds2408ItemFall{
+    box-shadow: 3px 2px 1px 0px rgba(0, 0, 0, 0.7), inset 0 0 3px 3px rgba(255, 0, 0, 0.9);
+}
+.dinOff{
+    background-color: #ff0000;
+    box-shadow: 0 0 2px 2px rgba(255, 0, 0, 0.7);
+}
+.dinNo{
+    background-color: #ffff00;
+    box-shadow: 0 0 2px 1px rgba(255, 255, 0, 0.7);
+}
+.dinOn{
+    background-color: #008800;
+    box-shadow: 0 0 2px 1px rgba(0, 255, 0, 0.7);
+}
